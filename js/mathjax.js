@@ -1,4 +1,4 @@
-MathJax.Hub.Config({
+window.MathJax = {
   tex2jax: {
     inlineMath: [['$','$'], ['\\(','\\)']],
   },
@@ -17,4 +17,4 @@ MathJax.Hub.Config({
     matchFontHeight: false,
     mtextFontInherit: true,
   },
-});
+};
