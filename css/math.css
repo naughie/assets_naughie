@@ -1,27 +1,4 @@
 @charset "UTF-8";
-.Thm {
-  padding: 1em 1em;
-  margin: 0 0 2em;
-  color: #232323;
-  background: #fff8e8;
-  border-left: solid 10px #ffc06e;
-}
-
-.Thm p {
-  padding: 0;
-  margin: 0;
-}
-
-.ProofQED:before {
-  float: right;
-  content: "∎";
-}
-
-.Proof:before {
-  content: "Proof. ";
-  font-style: italic;
-  font-weight: bold;
-}
 
 ol {
   counter-reset: list;
@@ -80,36 +57,34 @@ li.tocSecondLevel:before {
   margin-right: 0.7em;
 }
 
-.Definition:before, .Theorem:before, .Proposition:before, .Lemma:before, .Corollary:before {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 3em;
-  border-bottom: solid 0.2em #ffc046;
-}
-
 .Definition {
   counter-increment: definition;
-}
-.Definition:before {
-  content: "Definition " counter(section) "." counter(subsection) "." counter(definition);
 }
 
 .Theorem, .Proposition, .Lemma, .Corollary {
   counter-increment: theorem;
 }
 
-.Theorem:before {
-  content: "Theorem " counter(section) "." counter(subsection) "." counter(theorem);
+.DefinitionName:after, .TheoremName:after, .PropositionName:after, .LemmaName:after, .CorollaryName:after {
+  font-weight: bold;
 }
 
-.Proposition:before {
-  content: "Proposition " counter(section) "." counter(subsection) "." counter(theorem);
+.DefinitionName:after {
+  content: " " counter(section) "." counter(subsection) "." counter(definition);
 }
 
-.Lemma:before {
-  content: "Lemma " counter(section) "." counter(subsection) "." counter(theorem);
+.TheoremName:after {
+  content: " " counter(section) "." counter(subsection) "." counter(theorem);
 }
 
-.Corollary:before {
-  content: "Corollary " counter(section) "." counter(subsection) "." counter(theorem);
+.PropositionName:after {
+  content: " " counter(section) "." counter(subsection) "." counter(theorem);
+}
+
+.LemmaName:after {
+  content: " " counter(section) "." counter(subsection) "." counter(theorem);
+}
+
+.CorollaryName:after {
+  content: " " counter(section) "." counter(subsection) "." counter(theorem);
 }
