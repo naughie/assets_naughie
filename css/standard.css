@@ -45,4 +45,16 @@ code, kbd, pre {
   margin-bottom: 2em;
 }
 
+li {
+  padding-top: 0.7em;
+}
+
+h1 {
+  padding-top: 1em;
+}
+
+ul {
+  padding-bottom: 0.4em;
+}
+
 /*# sourceMappingURL=preload.css.map */
